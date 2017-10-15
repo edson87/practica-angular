@@ -1,0 +1,15 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+}
+  
+.example-container > * {
+    width: 20%;
+    margin-bottom: 1%;
+}
+
+.example-button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }

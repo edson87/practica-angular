@@ -7,7 +7,12 @@ import {
   MatListModule,
   MatToolbarModule,
   MatCheckboxModule,
+  MatFormFieldModule,
+  MatDialogModule
 } from '@angular/material';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+
+//import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
@@ -15,17 +20,24 @@ import {
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    MatFormFieldModule,
+    MatDialogModule
+   // BrowserAnimationsModule
   ],
   exports: [
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
     MatCheckboxModule,
-    MatListModule
+    MatListModule,
+    MatFormFieldModule,
+    MatDialogModule
+    //BrowserAnimationsModule
   ],
   providers: [
-    { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true }
+    { provide: MATERIAL_COMPATIBILITY_MODE, useValue: true },
+    { provide: MAT_DIALOG_DATA, useValue: true }
   ],
   declarations: [
     

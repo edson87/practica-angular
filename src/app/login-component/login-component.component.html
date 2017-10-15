@@ -1,0 +1,15 @@
+<h3>{{tittle_login}}</h3>
+<form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+  <div class="example-container">
+    <input matInput placeholder="username" type="text" [ngModelOptions]="{standalone: true}"
+            ngControl="username" [(ngModel)]="login.username" required>
+  </div>
+  <div class="example-container">
+    <input matInput placeholder="password" type="password" [ngModelOptions]="{standalone: true}"
+          ngControl="password" [(ngModel)]="login.password" required>
+  </div>
+  <div class="button-row">
+    <button mat-button color="primary">Enter</button>
+  </div>
+</form>
+
